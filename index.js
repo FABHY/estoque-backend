@@ -155,6 +155,11 @@ app.put('/produtos/:id', validarProduto, (req, res) => {
     });
 });
 
+app.get('/', (req, res) => {
+    res.send('Bem-vindo à API de Estoque!');
+});
+
+
 // Iniciar o servidor
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
